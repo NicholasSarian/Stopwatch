@@ -1,0 +1,132 @@
+html {
+	background-color: #E8E8E8;
+}
+* {
+	outline: none;
+	user-select: none;
+}
+h1 {
+	text-align: center;
+	color: blue;
+	font-family: Arial Black;
+	border-bottom: 1px solid black;
+	margin-top: 0;
+	margin-bottom: 5px;
+	height: 50px;
+}
+button {
+	margin-right: 10px;
+}
+.fontStyle:not(#lapsLabel) {
+	font-family: Arial Black;
+	font-size: 40px;
+}
+
+#pause, #start, #reset, #lap {
+	padding: 5px;
+	width: 130px;
+	transition: all 0.3s;
+	font-family: Arial Black;
+	background-color: white;
+}
+#start:disabled,
+#pause:disabled,
+#reset:disabled,
+#lap:disabled {
+	color: #bbbbbb;
+	border: 2px solid #bbbbbb;
+}
+
+#start {
+	color: #02A502;
+	border: 2px solid #02A502;
+}
+#start:hover:not(:disabled) {
+	background-color: #02A502;
+	color: white;
+}
+
+#pause {
+	color: #EA8F00;
+	border: 2px solid #EA8F00;
+}
+#pause:hover:not(:disabled) {
+	background-color: #EA8F00;
+	color: white;
+}
+
+#reset {
+	color: red;
+	border: 2px solid red;
+}
+#reset:hover:not(:disabled) {
+	background-color: red;
+	color: white;
+}
+
+#lap {
+	color: #0093ff;
+	border: 2px solid #0093ff;
+	margin-top: 10px;
+}
+#lap:hover:not(:disabled) {
+	background-color: #0093FF;
+	color: white;
+}
+
+
+#start:hover:not(:disabled),
+#pause:hover:not(:disabled),
+#reset:hover:not(:disabled),
+#lap:hover:not(:disabled) {
+	color: white;
+	cursor: pointer;
+}
+#lapsRecord {
+	border: 1px solid black;
+	height: 200px;
+	width: 300px;
+	overflow: auto;
+	text-align: center;
+	margin: auto;
+	font-family: Arial Black;
+	font-size: 17px;
+	color: #0093FF;
+	background-color: #ECECEC;
+}
+#lapsLabel {
+	width: 70px;
+	margin: 15px auto auto;
+	font-family: Arial Black;
+	font-size: 20px;
+}
+#container {
+	border: 1px solid black;
+	height: 485px;
+	width: 450px;
+	padding: 10px;
+	background-color: white;
+	text-align: center;
+	margin: auto;
+}
+#labels {
+	background-color: #ECECEC;
+	border-bottom: 1px solid black;
+	position: sticky;
+	top: 0;
+}
+.marginRight {
+	margin-right: 40px;
+}
+
+.animate {
+	animation: blink  1s step-start 0s infinite;
+}
+@keyframes blink {
+	50% {
+		color: red;
+	}
+	100% {
+		color: black;
+	}
+}

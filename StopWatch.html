@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stopwatch</title>
+	<link rel="stylesheet" href="Stopwatch_CSS.css">
+	<script src="Stopwatch_JS.js" defer></script>
+	<link rel="icon" href="Icon.png">
+</head>
+<body>
+	<div id="container">
+		<h1>Stopwatch</h1>
+		
+			<table style="margin: auto auto 10px">
+				<tbody>
+					<tr>
+						<td class="time"><span id="hours" class="fontStyle">00</span></td>
+						<td><span class="colon fontStyle">:</span></td>
+						<td class="time"><span id="minutes" class="fontStyle">00</span></td>
+						<td><span class="colon fontStyle">:</span></td>
+						<td class="time"><span id="seconds" class="fontStyle">00</span></td>
+						<td><span class="colon fontStyle">:</span></td>
+						<td class="time"><span id="milliseconds" class="fontStyle">00</span></td>
+					</tr>
+					<tr>
+						<td><span>Hours</span></td>
+						<td><span>&nbsp;</span></td>
+						<td><span>Minutes</span></td>
+						<td><span>&nbsp;</span></td>
+						<td><span>Seconds</span></td>
+						<td><span>&nbsp;</span></td>
+						<td><span>Milliseconds</span></td>
+					</tr>
+				</tbody>
+			</table>
+		
+		<button onclick="startStopWatch()" id="start">Start</button>
+		<button onclick="pauseStopWatch()" id="pause">Pause</button>
+		<button onclick="resetStopWatch()" id="reset">Reset</button><br>
+		<button onclick="laps()" id="lap">Lap</button>
+		
+		<div class="fontStyle" id="lapsLabel">Laps</div>
+		<div id="lapsRecord">
+			<div id="labels">
+				<span id="total" style="margin-right: 40px">Total</span>
+				<span id="time">Time</span>
+			</div>
+			<div id="lapCount"></div>
+		</div>
+	</div>
+</body>
+</html>
